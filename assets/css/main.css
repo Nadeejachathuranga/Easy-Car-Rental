@@ -1,0 +1,563 @@
+/*header*/
+section#header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 1;
+    height: 80px;
+}
+
+section#header > header > a {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+
+section#header > header > a > span {
+    color: #01d28e;
+}
+
+section#header > header > ul {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #999999;
+}
+
+section#header > header > ul > li:nth-child(1) > a {
+    color: #01d28e;
+}
+
+section#header > header > ul > li :hover {
+    color: #01d28e;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+    background: #01d28e;
+    background-size: 400%;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #fff;
+    border: none;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+            82.3deg,
+            #56CCF2 10.8%,
+            #2F80ED 94.3%
+    );
+    transition: all 0.5s;
+}
+
+section#header > header > div {
+    margin-right: 60px;
+}
+
+section#header > header > div > button:nth-child(1) {
+    width: 120.91px;
+}
+
+
+/*home section*/
+section#home > div:nth-child(1) {
+    width: 100%;
+    height: 750px;
+    background-image: url("../img/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section#home > div:nth-child(2) {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 44px;
+    color: #fff;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+section#home > div:nth-child(2) > p {
+    margin-top: 75px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/*About us section ====================================================================================*/
+section#aboutUs {
+    padding-top: 85px;
+}
+
+.first-header {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.second-header {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 40px;
+    color: #1B9CFC;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+section#aboutUs > section > div:nth-child(1) {
+    height: 750px;
+    background-color: white;
+}
+
+section#aboutUs > section > div:nth-child(2) {
+    height: 750px;
+    background-color: #01d28e;
+}
+
+section#aboutUs > section > div:nth-child(3) {
+    position: absolute;
+    right: 150px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-color: transparent;
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+section#aboutUs > section > div:nth-child(3) > ul > li {
+    list-style: none;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+section#aboutUs > section > div:nth-child(3) > ul > li > i {
+    color: red;
+}
+
+section#aboutUs > section > div:nth-child(4) {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-image: url("../img/about.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*service section ===================================================================================*/
+section#services {
+    padding-top: 85px;
+}
+
+.img-services {
+    width: 120px;
+    height: 120px;
+    background-color: #1089ff;
+    margin-left: 48px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+}
+
+.img-services:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 1px solid #2c3e50;
+}
+
+.icon-services {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+}
+
+section#services > section > div#wedding > div > div {
+    background-image: url("../img/icon/icons-wedding-car.png");
+}
+
+section#services > section > div#city > div > div {
+    background-image: url("../img/icon/icon-taxi.png");
+}
+
+section#services > section > div#airport > div > div {
+    background-image: url("../img/icon/icon-airport.png");
+}
+
+section#services > section > div#tour > div > div {
+    background-image: url("../img/icon/icon-road.png");
+}
+
+.heading-service {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#services > div {
+    width: 100%;
+    height: 365px;
+    background-image: url("../img/img-job.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+.driver-button {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1089ff;
+    left: 768px;
+    bottom: 140px;
+}
+
+.driver-button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.driver-button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #01d28e;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.driver-button:hover::before {
+    width: 250%;
+}
+
+section#services > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*cars section =======================================================================================*/
+section#cars {
+    padding-top: 85px;
+}
+
+.car-img {
+    height: 200px;
+    background-image: url("../img/bmwi8.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*first row of cars */
+section#cars > section#first > div:nth-child(1) > div:nth-child(1) {
+    background-image: url("../img/cars/display/PERODUA-Bezza-1.png");
+}
+
+section#cars > section#first > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Suzuki-Alto-800-2.png");
+}
+
+section#cars > section#first > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Suzuki-Alto-K10 -1.png");
+}
+
+/*second row of cars*/
+section#cars > section#second > div:nth-child(1) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Perodua-Bezza-Prime-Sedan-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section#cars > section#second > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Suzuki-Celerio-1.png");
+}
+
+section#cars > section#second > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Toyota-Allion-NZT-260-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*third row of cars*/
+section#cars > section#third > div:nth-child(1) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Toyota-Axio-NKR-165-1.png");
+}
+
+section#cars > section#third > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("../img/cars/display/toyota-premior.png");
+}
+
+section#cars > section#third > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("../img/cars/display/Toyota-Prius-C-Aqua-4.png");
+}
+
+/*fourth row of cars*/
+section#cars > section#fourth > div:nth-child(1) > div:nth-child(1) {
+    background-image: url("../img/cars/display/mercedes-benz-glc-suv.png");
+}
+
+section#cars > section#fourth > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("../img/cars/display/merces-sedan.png");
+}
+
+section#cars > section#fourth > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("../img/cars/display/bmw-i8-roadster.png");
+}
+
+.car-container {
+    box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes load89234 {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.car-name {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-bookNow {
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    background: #1089ff;
+    border: 1px solid #1089ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.btn-details {
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    background: #01d28e;
+    border: 1px solid #01d28e;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.outer-btn {
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+/*contact ======================================================================*/
+section#contact {
+    padding-top: 85px;
+}
+
+.info-item {
+    background: #f4f4f4;
+    padding: 30px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: #1089ff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.email-form {
+    width: 100%;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    padding-bottom: 20px;
+}
+
+section#contact input {
+    height: 50px;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin: 1rem auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30em;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1089ff;
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: white;
+    transition: all .3s ease;
+    box-shadow: 1px 1px 12px #1089ff;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+/*footer ===========================================================*/
+footer {
+    margin-top: 85px;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    padding-bottom: 50px;
+}
+
+.footer-text-heading {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+hr {
+    color: white;
+}
+
+footer > div > div > div > div {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+footer > div > div > div:nth-child(1) > div {
+    left: 70px;
+    background-image: url("../img/icon/icon-location.png");
+}
+
+footer > div > div > div:nth-child(2) > div {
+    left: 565px;
+    background-image: url("../img/icon/icon-phone.png");
+}
+
+footer > div > div > div:nth-child(3) > div {
+    right: 430px;
+    background-image: url("../img/icon/icon-clock.png");
+}

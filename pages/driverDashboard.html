@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/driverDashboardStyle.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.css">
+</head>
+<body>
+
+<!--side bar-->
+<div class="sidebar">
+    <div>
+        <span class="logo_name">Easy Car
+            <span style="color:  #01d28e; padding-left: 6px">Rent
+            </span>
+        </span>
+    </div>
+    <ul class="nav-links">
+        <li id="btn-dashboard">
+            <a href="#" class="active">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+        </li>
+        <li id="btn-schedule">
+            <a href="#">
+                <i class='bx bx-list-check'></i>
+                <span class="links_name">View Schedule</span>
+            </a>
+        </li>
+        <li id="btn-logOut" class="log_out">
+            <a href="#">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<section class="home-section">
+
+    <!--header-->
+    <nav>
+        <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="profile-details">
+            <img src="../assets/img/icon/driver.png" alt="">
+            <span class="admin_name">Driver</span>
+        </div>
+    </nav>
+
+    <!--main content-->
+    <main class="home-content" id="dashboard">
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Registered Users</div>
+                    <div class="number">66</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-user-check cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Customers</div>
+                    <div class="number">50</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-user-plus cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Registered Drivers</div>
+                    <div class="number">15</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-street-view cart three'></i>
+            </div>
+        </div>
+
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Vehicles</div>
+                    <div class="number">30</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Available Cars</div>
+                    <div class="number">25</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car-garage cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Maintain Vehicles</div>
+                    <div class="number">2</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car-mechanic cart three'></i>
+            </div>
+        </div>
+
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Requests</div>
+                    <div class="number">104</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-book-open cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Pending Requests</div>
+                    <div class="number">0</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-loader cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Available Drivers</div>
+                    <div class="number">14</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-street-view cart three'></i>
+            </div>
+        </div>
+
+    </main>
+
+    <!--driver schedule-->
+    <main class="home-content" id="driverSchedule">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!--table-->
+                <div class="col-11 p-5 bg-white rounded-3 mb-5">
+                    <div class="table-holder ps-1 pe-1 overflow-auto">
+                        <table class="table table-bordered border-black custom-table table-hover">
+                            <thead class="table-head">
+                            <tr>
+                                <th scope="col">Car ID</th>
+                                <th scope="col">Rent ID</th>
+                                <th scope="col">Pick Up Date</th>
+                                <th scope="col">Pick Up Time</th>
+                                <th scope="col">Return Date</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tblDriverSchedule">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</section>
+
+<script src="../controllers/baseUrl.js"></script>
+<script src="../assets/js/sweetalert2.js"></script>
+<script src="../assets/js/sweetalert2.all.js"></script>
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../controllers/alert.js"></script>
+<script src="../controllers/driverDashboardController.js"></script>
+
+</body>
+</html>

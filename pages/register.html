@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/registerStyle.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.css">
+</head>
+<body>
+
+<div class="d-flex container align-items-center position-absolute hero">
+
+    <form class="form-control pb-4" id="customerRegForm" enctype="multipart/form-data">
+
+        <div class="container text-center">
+
+            <div class="row row-cols-2">
+
+                <div class="col">
+                    <label class="form-label" for="userId" style="right: 275px">User ID</label>
+                    <input class="form-control" id="userId" name="userId" placeholder="C00-001" readonly
+                           type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="cusId" style="right: 260px">Customer ID</label>
+                    <input class="form-control" id="cusId" name="cusId" placeholder="C00-002" readonly
+                           type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="name" style="right: 265px">Full Name</label>
+                    <input class="form-control" id="name" name="name" placeholder="Full Name" type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="contact_No" style="right: 245px">Contact Number</label>
+                    <input class="form-control" id="contact_No" name="contact" placeholder="Contact Number"
+                           type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="address" style="right: 272px">Address</label>
+                    <input class="form-control" id="address" name="address" placeholder="Address" type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="email" style="right: 283px">Email</label>
+                    <input class="form-control" id="email" name="email" placeholder="Email Address" type="email">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="nic" style="right: 275px">NIC No</label>
+                    <input class="form-control" id="nic" name="nic" placeholder="NIC No" type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="license" style="right: 265px">License No</label>
+                    <input class="form-control" id="license" name="license" placeholder="License No"
+                           type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="role" style="right: 265px">Role Type</label>
+                    <input class="form-control" id="role" name="role" type="text" readonly
+                           value="REGISTERED_USER"
+                           placeholder="Registered User">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="nic_Img" style="right: 262px">Upload NIC</label>
+                    <input class="form-control" id="nic_Img" name="nic_Img" type="file">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="license_Img" style="right: 245px">Upload License </label>
+                    <input class="form-control" id="license_Img" name="license_Img" type="file">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="userName" style="right: 263px">User Name</label>
+                    <input class="form-control" id="userName" name="userName" placeholder="User Name" type="text">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="password" style="right: 267px">Password</label>
+                    <input class="form-control" id="password" name="passWord" placeholder="Enter Password"
+                           type="password">
+                    <span class="control-error"></span>
+                </div>
+
+                <div class="col">
+                    <button id="btnCusRegister" type="button">REGISTER</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../assets/js/sweetalert2.all.js"></script>
+<script src="../assets/js/sweetalert2.js"></script>
+<script src="../controllers/alert.js"></script>
+<script src="../controllers/baseUrl.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
+<script src="../controllers/customerController.js"></script>
+<script src="../controllers/validation/customerValidation.js"></script>
+
+</body>
+
+</html>

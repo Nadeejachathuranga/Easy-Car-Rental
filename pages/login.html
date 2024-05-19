@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/loginStyle.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.css">
+
+</head>
+<body>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form id="loginForm">
+    <h3>Welcome Back!</h3>
+
+    <label for="username">Username</label>
+    <input type="text" placeholder="Username" id="username">
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password">
+
+    <select class="form-select" id="role_Type" name="role_Type" aria-label="Default select example">
+        <option selected>Choose Role</option>
+        <option value="ADMIN">ADMIN</option>
+        <option value="REGISTERED_USER">REGISTERED_USER</option>
+        <option value="DRIVER">DRIVER</option>
+    </select>
+
+    <button type="button" id="btnLogin">Log In</button>
+</form>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../assets/js/sweetalert2.all.js"></script>
+<script src="../assets/js/sweetalert2.js"></script>
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
+<script src="../controllers/loginController.js"></script>
+<script src="../controllers/baseUrl.js"></script>
+<script src="../controllers/alert.js"></script>
+
+</html>

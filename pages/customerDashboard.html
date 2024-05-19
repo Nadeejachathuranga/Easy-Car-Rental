@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer DashBoard</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/customerDashboardStyle.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.css">
+</head>
+<body>
+
+<!--side bar-->
+<div class="sidebar">
+    <div>
+        <span class="logo_name">Easy Car
+            <span style="color:  #01d28e; padding-left: 6px">Rent
+            </span>
+        </span>
+    </div>
+    <ul class="nav-links">
+        <li id="btn-dashboard">
+            <a href="#" class="active">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+        </li>
+        <li id="btn-customer">
+            <a href="#">
+                <i class='bx bxs-user'></i>
+                <span class="links_name">View Profile</span>
+            </a>
+        </li>
+        <li id="btn-car">
+            <a href="#">
+                <i class='bx bx-car'></i>
+                <span class="links_name">Rent Cars</span>
+            </a>
+        </li>
+        <li id="btn-logOut" class="log_out">
+            <a href="#">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<section class="home-section">
+
+    <!--header-->
+    <nav>
+        <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="profile-details">
+            <img src="../assets/img/icon/man.png" alt="">
+            <span class="admin_name">User</span>
+        </div>
+    </nav>
+
+    <!--main content-->
+    <main class="home-content" id="dashboard">
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Registered Users</div>
+                    <div class="number">66</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-user-check cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Customers</div>
+                    <div class="number">50</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-user-plus cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Registered Drivers</div>
+                    <div class="number">15</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-street-view cart three'></i>
+            </div>
+        </div>
+
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Vehicles</div>
+                    <div class="number">30</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Available Cars</div>
+                    <div class="number">25</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car-garage cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Maintain Vehicles</div>
+                    <div class="number">2</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-car-mechanic cart three'></i>
+            </div>
+        </div>
+
+        <div class="overview-boxes">
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Total Requests</div>
+                    <div class="number">104</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bxs-book-open cart'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Pending Requests</div>
+                    <div class="number">0</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-loader cart two'></i>
+            </div>
+            <div class="box">
+                <div class="right-side">
+                    <div class="box-topic">Available Drivers</div>
+                    <div class="number">14</div>
+                    <div class="indicator">
+                        <i class='bx bx-up-arrow-alt'></i>
+                        <span class="text">Up from today</span>
+                    </div>
+                </div>
+                <i class='bx bx-street-view cart three'></i>
+            </div>
+        </div>
+
+    </main>
+
+    <!--profile content-->
+    <main class="home-content" id="manageProfile">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-11 p-5 bg-white rounded-3 mb-5">
+                    <div class="profile-holder ps-1 pe-1">
+                        <div class="row mt-3">
+
+                            <div class="card">
+                                <!-- start card-body -->
+                                <div class="card-body mt-4">
+                                    <!-- start row -->
+                                    <div class="row">
+                                        <!-- start col-->
+                                        <div class="col-xl-12">
+                                            <form id="customerDetailsForm" class="row">
+                                                <section id="sec1CustomerDetails" class="col-xl-4">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="userCusId">User ID<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" readonly id="userCusId"
+                                                               name="userId"
+                                                               placeholder="User ID" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="customerId">Customer ID<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="customerId" name="cusId"
+                                                               placeholder="First Name" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="name">Full Name<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="name" name="name"
+                                                               placeholder="Last Name" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="contact">Contact
+                                                            Number<span
+                                                                    class="text-danger"></span></label>
+                                                        <input class="form-control" id="contact"
+                                                               name="contact"
+                                                               placeholder="Contact No" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label visually-hidden" for="role"><span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control visually-hidden" id="role"
+                                                               name="role" value="REGISTERED_USER" type="text">
+                                                    </div>
+                                                </section>
+                                                <section id="sec2CustomerDetails" class="col-xl-4">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="address">Address<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="address" name="address"
+                                                               placeholder="Address" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="email">Email<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="email"
+                                                               name="email"
+                                                               placeholder="Email" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="nic">Nic No<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="nic" name="nic"
+                                                               placeholder="Nic No" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="nic_Img">NIC Image<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="nic_Img" name="nic_Img"
+                                                               placeholder="NIC NO" type="file">
+                                                    </div>
+                                                </section>
+                                                <section id="sec3CustomerDetails" class="col-xl-4">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="license">Licence No<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="license"
+                                                               name="license"
+                                                               placeholder="Licence No" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="license_Img">Licence Image<span
+                                                                class="text-danger"></span></label>
+                                                        <input class="form-control" id="license_Img" name="license_Img"
+                                                               placeholder="NIC NO" type="file">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="userName" class="form-label">User Name<span
+                                                                class="text-danger"></span></label>
+                                                        <div class="input-group has-validation">
+                                                            <input type="text" class="form-control"
+                                                                   id="userName"
+                                                                   name="userName" placeholder="User Name"
+                                                                   aria-describedby="customerInputGroupPrepend"
+                                                                   required>
+                                                            <div class="invalid-feedback">
+                                                                Please choose a username.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="passWord" class="form-label">Password<span
+                                                                class="text-danger"></span></label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="password" id="passWord" name="passWord"
+                                                                   class="form-control" placeholder="Password">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-end mt-5 mb-3">
+                                                        <div class="col-3">
+                                                            <button class="button-update" id="btnUpdateCustomer"
+                                                                    type="button">
+                                                                Update
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </form>
+                                        </div>
+                                        <!-- end col-->
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+
+                            <div class="card mt-5 profile-holder">
+                                <div class=" row col-12 mb-3 m-2 p-2 d-flex justify-content-evenly">
+
+                                    <div class=" col-md-4 col-lg-4 col-sm-4 xs-4 img-fluid m-3 p-3"
+                                         id="photoImg1"></div>
+
+                                    <div class=" col-md-4 col-lg-4 col-sm-4 xs-4 img-fluid m-3 p-3"
+                                         style="border: 1px solid black; height: 300px;
+                                          background-size: contain !important;
+                                         background-position: center !important;
+                                         background-repeat: no-repeat !important"
+                                         id="photoImg2">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!--rent car content-->
+    <main class="home-content" id="rentCar">
+
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <!--dropdown-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Car Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="btnCar1">All</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar2">Transmission - Manuel</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar3">Transmission - Auto</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar4">General Cars</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar5">Luxury Cars</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar6">Premium Cars</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar7">Fuel Type - Petrol</a></li>
+                            <li><a class="dropdown-item" href="#" id="btnCar8">Fuel Type - Diesel</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="me-3 mt-2 p-2" id="clock">YYYY/MM/DD</div>
+
+                    <!--search-->
+                    <form class="d-flex" role="search">
+
+                        <input class="form-control me-2" type="search" placeholder="Brand (eg:Toyota)"
+                               aria-label="Search" id="txtCarBrand">
+                        <button class="btn btn-outline-info" type="button" id="btnSearchCars">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <!--All Cars-->
+        <div id="carSection" class="container text-center position-relative" style="top: 85px">
+
+            <div class="row row-cols-2 ms-3 me-2" id="allCars">
+                <!--Dynamically cars will be added to this section through controller-->
+            </div>
+
+        </div>
+
+        <!--rent form -->
+        <div class="rentForm" id="carRentForm">
+
+            <button type="button" class="btn-close" id="btnClose" aria-label="Close"></button>
+
+            <div class="col m-2">
+                <label class="form-label" for="carId" style="right: 275px">Car ID</label>
+                <input class="form-control" id="carId" name="carId" placeholder="Car ID" readonly type="text">
+            </div>
+
+            <div class="col m-2">
+                <label class="form-label" for="rentId" style="right: 275px">Rent ID</label>
+                <input class="form-control" id="rentId" name="rentId" placeholder="ROO-001" readonly type="text">
+            </div>
+
+
+            <div class="col m-2">
+                <label class="form-label" for="pickUpDate" style="right: 260px">Pick Up Date</label>
+                <input class="form-control" id="pickUpDate" name="pickUpDate" type="date">
+            </div>
+
+            <div class="col m-2">
+                <label class="form-label" for="pickUpTime" style="right: 260px">Pick Up Time</label>
+                <input class="form-control" id="pickUpTime" name="pickUpTime" type="time">
+            </div>
+
+            <div class="col m-2">
+                <label class="form-label" for="returnUpDate" style="right: 260px">Return Up Date</label>
+                <input class="form-control" id="returnUpDate" name="returnDate" type="date">
+            </div>
+
+            <div class="col m-2">
+                <label class="form-label" for="driverID" style="right: 265px">Driver ID</label>
+                <select class="form-select" id="driverID" name="driverID" type="text">
+
+                </select>
+            </div>
+
+            <button class="btn btn-outline-danger" type="button" id="btnRentReq">SEND RENT REQUEST</button>
+
+        </div>
+
+    </main>
+
+</section>
+
+<script src="../controllers/baseUrl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../assets/js/sweetalert2.js"></script>
+<script src="../assets/js/sweetalert2.all.js"></script>
+<script src="../controllers/alert.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
+<script src="../controllers/customerDashboardController.js"></script>
+<script src="../controllers/customerController.js"></script>
+<script src="../controllers/customerCarController.js"></script>
+<script src="../controllers/loginController.js"></script>
+<script src="../controllers/rentController.js"></script>
+
+</body>
+</html>
